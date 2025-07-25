@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Quiz Kiểm Thử Phần Mềm: Group 6</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Quiz Kiểm Thử Phần Mềm: Group 6</h1>
+        <div class="progress">
+          <div
+            class="progress-bar"
+            id="progressBar"
+          ></div>
+        </div>
+        <p class="question-counter">
+          Câu <span id="currentQuestion">1</span> /
+          <span id="totalQuestions">26</span>
+        </p>
+      </header>
+
+      <main>
+        <div
+          class="quiz-container"
+          id="quizContainer"
+        >
+          <div class="question-card">
+            <h2 id="questionText"></h2>
+            <div
+              class="options"
+              id="optionsContainer"
+            >
+              <!-- Options will be dynamically added here -->
+            </div>
+            <div class="quiz-controls">
+              <button
+                id="prevBtn"
+                class="btn btn-secondary"
+                onclick="previousQuestion()"
+                disabled
+              >
+                Câu trước
+              </button>
+              <button
+                id="nextBtn"
+                class="btn btn-primary"
+                onclick="nextQuestion()"
+                disabled
+              >
+                Câu tiếp
+              </button>
+              <button
+                id="submitBtn"
+                class="btn btn-success"
+                onclick="submitQuiz()"
+                style="display: none"
+              >
+                Nộp bài
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="result-container"
+          id="resultContainer"
+          style="display: none"
+        >
+          <div class="result-card">
+            <h2>Kết quả bài làm</h2>
+            <div class="score">
+              <div class="score-circle">
+                <span id="scorePercentage">0%</span>
+              </div>
+              <p>
+                Bạn đã trả lời đúng <span id="correctAnswers">0</span>/<span
+                  id="totalQuestionsResult"
+                  >26</span
+                >
+                câu
+              </p>
+            </div>
+            <div
+              class="result-details"
+              id="resultDetails"
+            >
+              <!-- Detailed results will be shown here -->
+            </div>
+            <button
+              class="btn btn-primary"
+              onclick="restartQuiz()"
+            >
+              Làm lại
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
