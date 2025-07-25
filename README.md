@@ -7,7 +7,7 @@
 Ứng dụng bao gồm 4 nhóm câu hỏi khác nhau:
 
 - **Group 1** (47 câu): Kiến thức tổng quan về kiểm thử phần mềm
-- **Group 3** (19 câu): Kiểm thử đơn vị và thiết kế test case  
+- **Group 3** (19 câu): Kiểm thử đơn vị và thiết kế test case
 - **Group 4** (19 câu): JUnit và kỹ thuật kiểm thử nâng cao
 - **Group 6** (26 câu): Chi phí kiểm thử và phân tích luồng dữ liệu
 
@@ -38,12 +38,13 @@
 ## 📱 Tương thích
 
 - ✅ Desktop browsers
-- ✅ Mobile browsers  
+- ✅ Mobile browsers
 - ✅ Tablet browsers
 
 ## 🎯 Mục đích
 
 Ứng dụng được thiết kế để:
+
 - Kiểm tra kiến thức về kiểm thử phần mềm
 - Ôn tập các khái niệm quan trọng
 - Thực hành với các câu hỏi đa dạng
@@ -51,4 +52,4 @@
 
 ---
 
-*Được phát triển cho mục đích giáo dục và ôn tập kiến thức kiểm thử phần mềm*
+_Được phát triển cho mục đích giáo dục và ôn tập kiến thức kiểm thử phần mềm_
