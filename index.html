@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Quiz Kiểm Thử Phần Mềm - Trang Chủ</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .container {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        color: #666;
+        margin-bottom: 40px;
+        font-size: 1.1rem;
+      }
+
+      .quiz-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+
+      .quiz-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 15px;
+        padding: 30px;
+        color: white;
+        text-decoration: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: block;
+      }
+
+      .quiz-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        color: white;
+      }
+
+      .quiz-card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .quiz-card p {
+        opacity: 0.9;
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+
+      .quiz-count {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 5px 15px;
+        font-size: 0.9rem;
+        margin-top: 15px;
+        display: inline-block;
+      }
+
+      .footer {
+        margin-top: 30px;
+        color: #666;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 20px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .quiz-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🧪 Quiz Kiểm Thử Phần Mềm</h1>
+      <p class="subtitle">
+        Chọn nhóm câu hỏi để bắt đầu kiểm tra kiến thức của bạn
+      </p>
+
+      <div class="quiz-grid">
+        <a
+          href="Group1/index.html"
+          class="quiz-card"
+        >
+          <h2>📚 Group 1</h2>
+          <p>
+            Kiến thức tổng quan về kiểm thử phần mềm, các loại kiểm thử, và
+            phương pháp kiểm thử cơ bản
+          </p>
+          <span class="quiz-count">47 câu hỏi</span>
+        </a>
+
+        <a
+          href="Group3/index.html"
+          class="quiz-card"
+        >
+          <h2>🔧 Group 3</h2>
+          <p>
+            Kiểm thử đơn vị, thiết kế test case, độ phức tạp chu trình và kiểm
+            thử luồng dữ liệu
+          </p>
+          <span class="quiz-count">19 câu hỏi</span>
+        </a>
+
+        <a
+          href="Group4/index.html"
+          class="quiz-card"
+        >
+          <h2>⚙️ Group 4</h2>
+          <p>
+            JUnit, đồ thị chương trình, kỹ thuật kiểm thử nâng cao và phân tích
+            luồng dữ liệu
+          </p>
+          <span class="quiz-count">19 câu hỏi</span>
+        </a>
+
+        <a
+          href="Group6/index.html"
+          class="quiz-card"
+        >
+          <h2>💰 Group 6</h2>
+          <p>
+            Chi phí kiểm thử, phân tích luồng dữ liệu, bất thường dữ liệu và quy
+            trình kiểm thử
+          </p>
+          <span class="quiz-count">26 câu hỏi</span>
+        </a>
+      </div>
+
+      <div class="footer">
+        <p>
+          💡 Mỗi nhóm câu hỏi tập trung vào các chủ đề khác nhau trong lĩnh vực
+          kiểm thử phần mềm
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
